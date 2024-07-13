@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<set xpath="//quest[not(contains(@id,'fetch'))]/reward[contains(@id,'groupQuestResourcesT0') and contains(@id,'groupQuestT1SkillMagazineBundle')]/@id">groupQuestResourcesT0</set>
+	<set xpath="//quest[not(contains(@id,'fetch'))]/reward[contains(@id,'groupQuestResourcesT1') and contains(@id,'groupQuestT1SkillMagazineBundle')]/@id">groupQuestResourcesT1</set>
+
+	<set xpath="//quest[not(contains(@id,'clear'))]/reward[contains(@id,'groupQuestResourcesT0') and contains(@id,'groupQuestT1SkillMagazineBundle')]/@id">groupQuestResourcesT0</set>
+	<set xpath="//quest[not(contains(@id,'clear'))]/reward[contains(@id,'groupQuestResourcesT1') and contains(@id,'groupQuestT1SkillMagazineBundle')]/@id">groupQuestResourcesT1</set>
+
+	<set xpath="//quest[contains(@id,'clear') and contains(@id,'tier5')]/reward[contains(@id,'groupQuestResourcesT1') and contains(@id,'groupQuestT1SkillMagazineBundle')]/@id">groupQuestResourcesT1</set>
+	<set xpath="//quest[contains(@id,'clear') and contains(@id,'tier6')]/reward[contains(@id,'groupQuestResourcesT1') and contains(@id,'groupQuestT1SkillMagazineBundle')]/@id">groupQuestResourcesT1</set>
+
+	<remove xpath="//quest[contains(@id,'nexttrader')]/reward[contains(@id,'groupQuestT1SkillMagazineBundle')]"/>
+</config>
